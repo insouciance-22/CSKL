@@ -1,0 +1,208 @@
+# ============================================================
+# CSKL code-only backup
+# ============================================================
+
+# ------------------------------------------------------------
+# BasicTS
+# 默认排除该项目中的所有内容，再开放需要备份的部分
+# ------------------------------------------------------------
+/BasicTS-master/*
+
+# 核心代码
+!/BasicTS-master/basicts/
+!/BasicTS-master/basicts/**
+
+!/BasicTS-master/scripts/
+!/BasicTS-master/scripts/**
+
+!/BasicTS-master/examples/
+!/BasicTS-master/examples/**
+
+!/BasicTS-master/experiments/
+!/BasicTS-master/experiments/**
+
+!/BasicTS-master/tests/
+!/BasicTS-master/tests/**
+
+!/BasicTS-master/tutorial/
+!/BasicTS-master/tutorial/**
+
+# README 使用的图片，体积约 1.5 MB
+!/BasicTS-master/assets/
+!/BasicTS-master/assets/**
+
+# 只保留服务器使用的四个基线
+!/BasicTS-master/baselines/
+/BasicTS-master/baselines/*
+
+!/BasicTS-master/baselines/DCRNN/
+!/BasicTS-master/baselines/DCRNN/**
+
+!/BasicTS-master/baselines/DGCRN/
+!/BasicTS-master/baselines/DGCRN/**
+
+!/BasicTS-master/baselines/GWNet/
+!/BasicTS-master/baselines/GWNet/**
+
+!/BasicTS-master/baselines/STGCN/
+!/BasicTS-master/baselines/STGCN/**
+
+# 根目录中的必要文件
+!/BasicTS-master/.gitignore
+!/BasicTS-master/.isort.cfg
+!/BasicTS-master/.pylintrc
+!/BasicTS-master/README.md
+!/BasicTS-master/README_CN.md
+!/BasicTS-master/requirements.txt
+!/BasicTS-master/LICENSE
+!/BasicTS-master/CITATION.CFF
+!/BasicTS-master/SECURITY.md
+
+# 当前新增的小型统计脚本
+!/BasicTS-master/complexity.py
+!/BasicTS-master/paramCount.py
+
+
+# ------------------------------------------------------------
+# GRIN
+# ------------------------------------------------------------
+/grin-main/*
+
+!/grin-main/config/
+!/grin-main/config/**
+
+!/grin-main/lib/
+!/grin-main/lib/**
+
+!/grin-main/scripts/
+!/grin-main/scripts/**
+
+!/grin-main/tsl/
+!/grin-main/tsl/**
+
+!/grin-main/.gitignore
+!/grin-main/README.md
+!/grin-main/requirements.txt
+!/grin-main/conda_env.yml
+!/grin-main/grin.png
+
+
+# ------------------------------------------------------------
+# Kriging
+# ------------------------------------------------------------
+/Kriging-Library/*
+
+!/Kriging-Library/data_provider/
+!/Kriging-Library/data_provider/**
+
+!/Kriging-Library/exp/
+!/Kriging-Library/exp/**
+
+!/Kriging-Library/layers/
+!/Kriging-Library/layers/**
+
+!/Kriging-Library/models/
+!/Kriging-Library/models/**
+
+!/Kriging-Library/scripts/
+!/Kriging-Library/scripts/**
+
+!/Kriging-Library/test/
+!/Kriging-Library/test/**
+
+!/Kriging-Library/utils/
+!/Kriging-Library/utils/**
+
+!/Kriging-Library/run.py
+!/Kriging-Library/requirements.txt
+
+
+# ============================================================
+# 即使出现在允许上传的代码目录中，也排除以下内容
+# ============================================================
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python 虚拟环境
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pypackages__/
+
+# IDE 设置
+.idea/
+.vscode/
+
+# 测试、类型检查和构建缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg
+*.egg-info/
+
+# 操作系统临时文件
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# 日志和训练输出
+*.log
+events.out.tfevents.*
+lightning_logs/
+wandb/
+runs/
+
+# 数据、数组和模型权重
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.dat
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.core
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+
+# 密钥和本机配置
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa
+id_ed25519
+
+# 当前目录中的论文
+/14101_Compositional_Spatial_Ke.pdf
